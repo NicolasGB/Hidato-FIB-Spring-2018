@@ -1,0 +1,50 @@
+﻿.root {
+    -fx-background-color: #D0FAEE;
+    -fx-accent: #2A8E82	;
+}
+
+.pane {
+    -fx-background-color: #D0FAEE;
+    -fx-accent: #2A8E82	;
+}
+
+.button {
+    -fx-background-color: #20BF9F;
+    -fx-text-fill: white;
+}
+
+.text-field{
+    -fx-highlight-fill:#DAF4F0	 ;
+    -fx-text-box-border: #2A8E82;
+    -fx-background-color: white;
+    -fx-faint-focus-color: transparent;
+}
+
+.button:hover{
+    -fx-background-color: #36DBCA;
+    -fx-text-fill: white;
+}
+
+.choice-box{
+    -fx-background-color: white;
+}
+
+.choice-box:hover{
+    -fx-background-color: #4CB7A5;
+}
+
+.toggle-button{
+    -fx-background-color: white;
+}
+
+.toggle-button:hover{
+    -fx-background-color: #4CB7A5;
+}
+
+.menu-button{
+    -fx-background-color: white;
+}
+
+.menu-button:hover{
+    -fx-background-color: #4CB7A5;
+}

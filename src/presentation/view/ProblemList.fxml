@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane styleClass="pane" stylesheets="@../controllers/style.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <Region HBox.hgrow="ALWAYS" />
+            <Text fill="#30a1b5" strokeType="OUTSIDE" strokeWidth="0.0" text="List of all Problems">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </Text>
+            <Region layoutX="38.0" layoutY="10.0" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+   </top>
+   <bottom>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <Region HBox.hgrow="ALWAYS" />
+            <Button fx:id="loadButton" alignment="CENTER" mnemonicParsing="false" onAction="#onLoadFile" text="Load from file">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="backButton" alignment="CENTER" mnemonicParsing="false" onAction="#onBackButtonClick" text="Back">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+            <Region HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+   </bottom>
+   <center>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <HBox>
+               <children>
+                  <Region HBox.hgrow="ALWAYS" />
+                  <MenuButton fx:id="selectType" mnemonicParsing="false" text="Types…">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </MenuButton>
+                  <MenuButton fx:id="selectDifficulty" mnemonicParsing="false" text="Difficulties…">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </MenuButton>
+                  <MenuButton fx:id="selectPlayer" mnemonicParsing="false" text="Players…">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </MenuButton>
+                  <Button fx:id="clearButton" mnemonicParsing="false" onAction="#onClearFilters" text="Clear">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Region HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <HBox VBox.vgrow="ALWAYS">
+               <children>
+                  <Region HBox.hgrow="ALWAYS" />
+                  <TableView fx:id="tableView">
+                    <columns>
+                      <TableColumn fx:id="typeColumn" prefWidth="75.0" text="Type" />
+                      <TableColumn fx:id="rowsColumn" prefWidth="75.0" text="Rows" />
+                        <TableColumn fx:id="columnsColumn" prefWidth="75.0" text="Columns" />
+                        <TableColumn fx:id="difficultyColumn" prefWidth="75.0" text="Difficulty" />
+                        <TableColumn fx:id="creatorColumn" prefWidth="75.0" text="Creator" />
+                        <TableColumn fx:id="rankingColumn" prefWidth="75.0" text="Ranking" />
+                        <TableColumn fx:id="playColumn" prefWidth="75.0" text="Play" />
+                    </columns>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </TableView>
+                  <Region layoutX="10.0" layoutY="10.0" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

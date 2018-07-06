@@ -1,0 +1,6 @@
+workspace.xml
+out/
+.idea/
+*.iml
+.DS_Store
+Game/

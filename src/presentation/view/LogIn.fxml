@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane styleClass="pane" stylesheets="@../controllers/style.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <VBox minHeight="-Infinity" prefHeight="78.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox VBox.vgrow="ALWAYS">
+               <children>
+                  <Region HBox.hgrow="ALWAYS" />
+                  <Text fill="#30a1b5" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Hidato The Game">
+                     <font>
+                        <Font name="Arial Bold" size="30.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </HBox.margin>
+                  </Text>
+                  <Region layoutX="10.0" layoutY="10.0" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox minWidth="-Infinity" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Region HBox.hgrow="ALWAYS" />
+                  <VBox minHeight="-Infinity" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Region layoutX="10.0" layoutY="61.0" VBox.vgrow="ALWAYS" />
+                        <HBox>
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="20.0" />
+                           </VBox.margin>
+                           <children>
+                              <Region HBox.hgrow="ALWAYS" />
+                              <TextField fx:id="usernameField" prefHeight="25.0" prefWidth="250.0" promptText="Username" />
+                              <Region layoutX="10.0" layoutY="10.0" HBox.hgrow="ALWAYS" />
+                           </children>
+                        </HBox>
+                        <HBox>
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </VBox.margin>
+                           <children>
+                              <Region HBox.hgrow="ALWAYS" />
+                              <PasswordField fx:id="passwordField" prefHeight="25.0" prefWidth="250.0" promptText=" Password">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </PasswordField>
+                              <Region layoutX="10.0" layoutY="10.0" HBox.hgrow="ALWAYS" />
+                           </children>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Region HBox.hgrow="ALWAYS" />
+                              <VBox>
+                                 <children>
+                                    <Region VBox.vgrow="ALWAYS" />
+                                    <Text onMouseClicked="#registerText" onMousePressed="#registerText" strokeType="OUTSIDE" strokeWidth="0.0" text="Cick here to create your account" underline="true">
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </VBox.margin>
+                                    </Text>
+                                    <Region VBox.vgrow="ALWAYS">
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                    </Region>
+                                 </children>
+                              </VBox>
+                              <HBox>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <children>
+                                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#clickOnLogin" text="LogIn">
+                                       <HBox.margin>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                              <Region HBox.hgrow="ALWAYS" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <Region layoutX="10.0" layoutY="10.0" HBox.hgrow="ALWAYS" />
+                  <VBox>
+                     <children>
+                        <Region VBox.vgrow="ALWAYS" />
+                        <Region VBox.vgrow="ALWAYS" />
+                        <Region layoutX="10.0" layoutY="10.0" VBox.vgrow="ALWAYS" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <Region VBox.vgrow="ALWAYS" />
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Region HBox.hgrow="ALWAYS" />
+                  <ImageView pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/hidato.png" />
+                     </image>
+                  </ImageView>
+                  <Region HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <VBox VBox.vgrow="ALWAYS">
+               <children>
+                  <Region />
+                  <HBox>
+                     <children>
+                        <Region HBox.hgrow="ALWAYS" />
+                        <Region layoutX="10.0" layoutY="10.0" HBox.hgrow="ALWAYS" />
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+                  <Region layoutX="10.0" layoutY="10.0" VBox.vgrow="ALWAYS" />
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </center>
+   <left>
+      <VBox minHeight="-Infinity" minWidth="-Infinity" prefWidth="100.0" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Region minHeight="-Infinity" />
+         </children>
+      </VBox>
+   </right>
+   <bottom>
+      <HBox minHeight="-Infinity" BorderPane.alignment="CENTER">
+         <children>
+            <Region minWidth="-Infinity" HBox.hgrow="ALWAYS" />
+            <Label minWidth="-Infinity" text="All rights reserved to prop 6-3 ">
+               <padding>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </padding>
+            </Label>
+            <Region layoutX="10.0" layoutY="10.0" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>
